@@ -1746,7 +1746,7 @@ h2 {
 
 
 
-.sidenav {
+#sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -1759,7 +1759,7 @@ h2 {
   padding-top: 60px;
 }
 
-.sidenav a {
+#sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -1768,11 +1768,11 @@ h2 {
   transition: 0.3s;
 }
 
-.sidenav a:hover {
+#sidenav a:hover {
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+#sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -1854,23 +1854,12 @@ h2 {
 
 
   </div>
-<div id="mySidenav, chatsText" class="sidenav">
+<div id="chatsText" class="sidenav, mySidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="login-containertwo">
     <small><p style="color:gray;" class="text-left">Chats</p></small>
   </div>
 </div>
-
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
 
 
   <script>
