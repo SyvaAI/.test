@@ -2185,12 +2185,13 @@ function changeContent2() {
 }
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("sidenav").style.width = "100%";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("sidenav").style.width = "0";
 }
+
 
 async function startNewChat() {
   // Make sure no ghost chat is created
@@ -2233,7 +2234,7 @@ async function startNewChat() {
           <script>
             // Select the button and the "Chats" section
             const toggleChatsBtn = document.getElementById("toggleChatsBtn");
-            const chatsText = document.getElementById("chatsText");
+            const chatsText = document.getElementById("sidenav");
           
             // Event listener to toggle the visibility of the "Chats" section
             toggleChatsBtn.addEventListener("click", function() {
